@@ -29,6 +29,18 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  shared_preferences: ^2.0.13
+  get_it: ^7.2.0
+  fluttertoast: ^8.0.8
+  shimmer: ^2.0.0
+  intl: ^0.17.0
+  pull_to_refresh: ^2.0.0
+  path_provider: ^2.0.0
+  path: ^1.8.0
+  flutter_slidable: ^1.2.0
+  flutter_bloc: ^8.0.1
+  retrofit: '3.0.1+1'
+  logger: any 
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -38,12 +50,9 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
-  # The "flutter_lints" package below contains a set of recommended lints to
-  # encourage good coding practices. The lint set provided by the package is
-  # activated in the `analysis_options.yaml` file located at the root of your
-  # package. See that file for information about deactivating specific lint
-  # rules and activating additional ones.
+  retrofit_generator: '3.0.1+1'
+  build_runner: ^2.1.7
+  json_serializable: '6.2.0'
   flutter_lints: ^2.0.0
 
 # For information on the generic Dart part of this file, see the
