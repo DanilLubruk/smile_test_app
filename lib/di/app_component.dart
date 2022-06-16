@@ -5,7 +5,9 @@ import 'package:smile_test_app/data/repositories/news_repository.dart';
 
 abstract class AppComponent {
   static Future create() async {
-    GetIt.I.registerSingleton<Dio>(Dio());
+    Dio dio = Dio();
+    dio.options.headers["Demo-Header"] = "demo header";
+    GetIt.I.registerSingleton<Dio>(dio);
     GetIt.I.registerFactory<NewsClient>(() => NewsClient(_getDio()));
     GetIt.I.registerFactory<NewsRepository>(
         () => NewsRepository(_getNewsClient()));

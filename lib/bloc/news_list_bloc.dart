@@ -39,9 +39,9 @@ class NewsListState {
 }
 
 class NewsListUpdated extends NewsListState {
-  NewsListUpdated(super.pagedViews);
+  NewsListUpdated(List<News> pagedViews) : super(pagedViews);
 }
 
 class NewsListDataRead extends NewsListState {
-  NewsListDataRead(super.pagedViews);
+  NewsListDataRead(List<News> pagedViews) : super(pagedViews);
 }

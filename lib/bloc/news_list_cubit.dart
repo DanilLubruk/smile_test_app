@@ -15,9 +15,9 @@ class DataState {
 }
 
 class DataLoaded extends DataState {
-  DataLoaded(super.news);
+  DataLoaded(List<News> news) : super(news);
 }
 
 class DataNotLoaded extends DataState {
-  DataNotLoaded(super.news);
+  DataNotLoaded(List<News> news) : super(news);
 }

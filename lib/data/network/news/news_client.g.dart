@@ -8,7 +8,7 @@ part of 'news_client.dart';
 
 NewsDataObject _$NewsDataObjectFromJson(Map<String, dynamic> json) =>
     NewsDataObject(
-      Id: json['Id'] as String?,
+      Id: json['Id'] as int?,
       Title: json['Title'] as String?,
       Text: json['Text'] as String?,
       DateTime: json['DateTime'] as String?,

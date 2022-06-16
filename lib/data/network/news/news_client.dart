@@ -14,7 +14,7 @@ abstract class NewsClient {
 
 @JsonSerializable()
 class NewsDataObject {
-  String? Id;
+  int? Id;
   String? Title;
   String? Text;
   String? DateTime;

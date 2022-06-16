@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:smile_test_app/di/app_component.dart';
 import 'package:smile_test_app/ui/news_list_screen.dart';
 
-void main() {
+void main() async{
+  await AppComponent.create();
   runApp(const MyApp());
 }
 

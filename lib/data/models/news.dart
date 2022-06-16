@@ -14,8 +14,7 @@ class News {
   final String language;
 
   News(NewsDataObject newsDataObject)
-      : id =
-            int.tryParse(newsDataObject.Id ?? "") ?? NetworkConsts.undefinedIdValue,
+      : id = newsDataObject.Id ?? NetworkConsts.undefinedIdValue,
         title = newsDataObject.Title ?? "",
         text = newsDataObject.Text ?? "",
         _dateTime = newsDataObject.DateTime ?? "",
