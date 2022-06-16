@@ -43,20 +43,17 @@ class _NewsListScreenState extends State<NewsListScreen> {
             return SizedBox();
           }
         },
-        listener: (context, dataState) => newsListBloc.add(NextPagePressed(dataState.news, 0)),
+        listener: (context, dataState) =>
+            newsListBloc.add(NextPagePressed(dataState.news, 0)),
       ));
 
   Widget listLoader(BuildContext context) => BlocProvider<PaginatorCubit>(
       create: (context) => paginatorCubit,
       child: BlocConsumer<PaginatorCubit, int>(
-        builder: (context, pageNumber) =>
-            BlocConsumer<NewsListCubit, DataState>(
-                builder: (context, dataState) => BlocProvider<NewsListBloc>(
-                      create: (context) => newsListBloc,
-                      child: listView(context),
-                    ),
-                listener: (context, dataState) => newsListBloc
-                    .add(NextPagePressed(dataState.news, pageNumber))),
+        builder: (context, pageNumber) => BlocProvider<NewsListBloc>(
+          create: (context) => newsListBloc,
+          child: listView(context),
+        ),
         listener: (context, pageNumber) {},
       ));
 
