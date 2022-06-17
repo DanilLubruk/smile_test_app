@@ -27,4 +27,6 @@ class News {
         language = newsDataObject.Language ?? "ru";
 
   DateTime get dateTime => DateTime.tryParse(_dateTime) ?? DateTime.now();
+
+  List<String> get allImages => [mainImagePath, ...additionalImagesPaths];
 }
