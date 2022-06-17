@@ -40,6 +40,9 @@ dependencies:
   flutter_slidable: ^1.2.0
   flutter_bloc: ^8.0.1
   retrofit: '3.0.1+1'
+  flutter_cache_manager: ^3.3.0 
+  cached_network_image: ^3.2.1
+  google_fonts: ^3.0.1
   logger: any 
 
 
