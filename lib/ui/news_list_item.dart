@@ -45,7 +45,8 @@ class _NewsListItemState extends State<NewsListItem> {
               SizedBox(
                   child: Text(item.title,
                       style: GoogleFonts.lora(
-                          fontSize: 16, fontWeight: FontWeight.bold),
+                          fontSize: UiConsts.listItemTitleTextSize,
+                          fontWeight: FontWeight.bold),
                       maxLines: 3,
                       overflow: TextOverflow.ellipsis)),
               Text(TimeUtils.getLocalStrFromDate(item.dateTime),
